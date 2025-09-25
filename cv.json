@@ -12,7 +12,7 @@
             "Période":"Octobre 2021 - Mars 2023",
             "Localisation":"Paris",
             "Niveau Étude":"BAC +6",
-            "Description":""
+            "Description":"_"
         },
         {
             "Nom":"Diplôme d'Ingénieur Généraliste",
@@ -20,7 +20,7 @@
             "Période":"Septembre 2018 - Août 2021",
             "Localisation":"Rouen",
             "Niveau Étude":"BAC +5",
-            "Description":""
+            "Description":"_"
         },
         {
             "Nom":"Cours Préparatoire Grande École",
@@ -55,10 +55,10 @@
                 "Développement de Chatbot pour répondre aux attentes métiers",
                 "Réalisation de dashboard por la restitutions des données",
                 "Etablissement des processus de déploiement",
-                ""
+                "_"
             ],
-            "Principales Technologies":["Snowflake", "Blueway", "Oracle", "MySQL", "SAP", "Gitlab", "M3", "Copilot Studio", "Streamlit", "Tableau Software", ""],
-            "Plus Value":["Gestion de projet", "Structuration des Processus", "Communication métier", ""]
+            "Principales Technologies":["Snowflake", "Blueway", "Oracle", "MySQL", "SAP", "Gitlab", "M3", "Copilot Studio", "Streamlit", "Tableau Software"],
+            "Plus Value":["Gestion de projet", "Structuration des Processus", "Communication métier"]
         },
         {
             "Nom":"Data Engineer",
@@ -74,9 +74,9 @@
                 "Mise en place de flows Node-Red pour l'industrialisation et l'automatisation des process d'ingestion",
                 "Mise en place de l'architecture d'ingestion des données pour un nouveau site",
                 "Rédaction de documentations de bonnes pratiques ou cheat-sheet pour la gestion de la base de donnée",
-                ""
+                "_"
             ],
-            "Principales Technologies":["Python", "Postgre", "Node-Red", "DBeaver", "Azure DevOps", "Gitlab", ""],
+            "Principales Technologies":["Python", "Postgre", "Node-Red", "DBeaver", "Azure DevOps", "Gitlab"],
             "Plus Value":[" Communication", "Capacité multitâche", "Capacité d'intégration"]
         },
         {
@@ -97,7 +97,7 @@
                 "Support et correction de problèmes remontés par le client",
                 "Sérialisation et Désérialisation de fichier Avro, JSON, ..."
             ],
-            "Principales Technologies":["Kafka", "Scala", "Snowflake", "Bash", "Docker", "Kubernetes", "SQL", "Jenkins", "Gitlab", "Spark", "Databricks", "Groovy", "Cucumber", "Ansible", "Karate", "Kendo", "Popcorn", "Kotlin", "Ammonite", "sbt", "maven", "grafana", "prometheus", "splunk", "instana", "kafkaUI", ""],
+            "Principales Technologies":["Kafka", "Scala", "Snowflake", "Bash", "Docker", "Kubernetes", "SQL", "Jenkins", "Gitlab", "Spark", "Databricks", "Groovy", "Cucumber", "Ansible", "Karate", "Kendo", "Popcorn", "Kotlin", "Ammonite", "sbt", "maven", "grafana", "prometheus", "splunk", "instana", "kafkaUI"],
             "Plus Value":"Communication, Esprit d'équipe, "
         },
         {
@@ -113,7 +113,7 @@
                 "Intégration des alertes à la plateforme"
             ],
             "Principales Technologies":"Python, Pycharm, Anaconda, REST-API,",
-            "Plus Value":""
+            "Plus Value":"_"
         },
         {
             "Nom":"Agent d'Assemblage",
@@ -127,7 +127,7 @@
                 "Tri de fiches de maintenance de composant"
             ],
             "Principales Technologies":"_",
-            "Plus Value":""
+            "Plus Value":"_"
         },
         {
             "Nom":"Agent de Maintenace",
@@ -142,7 +142,7 @@
                 "Piste d'atterrissage inspectée quotidiennement"
             ],
             "Principales Technologies":"_",
-            "Plus Value":""
+            "Plus Value":"_"
         }
     ],
     "Compétences":[
@@ -160,11 +160,11 @@
         },
         {
             "Nom":"Techno Informatique",
-            "Liste":["Gitlab", "Visual Studio", "Jenkins", "IntelIJ", "Jupyter Notebook", "Linux", "Pack Office", "Node-Red", "Blueway", ""]
+            "Liste":["Gitlab", "Visual Studio", "Jenkins", "IntelIJ", "Jupyter Notebook", "Linux", "Pack Office", "Node-Red", "Blueway"]
         },
         {
             "Nom":"Base de Données",
-            "Liste":["Snowflake", "Azure Datalake", "SQL Server", "PostgreSQL", "MongoDB", "Oracle", ""]
+            "Liste":["Snowflake", "Azure Datalake", "SQL Server", "PostgreSQL", "MongoDB", "Oracle"]
         },
         {
             "Nom":"Data Vizualisation",
@@ -210,7 +210,7 @@
             "Réalisation":[
                 {
                     "Intitulé":"Projet Ingénieur (PING)",
-                    "Description":""
+                    "Description":"_"
                 },
                 {
                     "Intitulé":"Prédiction Accident Routier",
