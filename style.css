@@ -1,0 +1,193 @@
+:root{
+  --bg:#0b1220;
+  --panel:#10192b;
+  --paper:#ffffff;
+  --ink:#1f2937;
+  --muted:#6b7280;
+  --primary:#0d6efd;
+  --accent:#00BFA6;
+  --chip:#eef2ff;
+  --chip-border:#c7d2fe;
+}
+
+/* Reset léger */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+
+body{
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 600px at 20% -10%, #0d6efd18 0%, transparent 60%),
+    radial-gradient(1200px 600px at 120% 10%, #00bfa618 0%, transparent 60%),
+    #f6f7fb;
+  line-height:1.6;
+}
+
+/* Carte globale */
+.cv{
+  max-width: 980px;
+  margin: 48px auto;
+  background: var(--paper);
+  border-radius: 16px;
+  box-shadow:
+    0 20px 60px rgba(13,110,253,0.08),
+    0 6px 18px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+/* Header */
+.cv__header{
+  padding: 36px 32px 28px;
+  background: linear-gradient(135deg, #0d6efd 0%, #00BFA6 100%);
+  color: #fff;
+}
+
+.cv__name{
+  margin:0 0 6px;
+  font-size: 32px;
+  letter-spacing: .3px;
+}
+
+.cv__tagline{
+  margin:0 0 8px;
+  opacity:.95;
+  font-weight:500;
+}
+
+.cv__meta{
+  margin:0;
+  opacity:.9;
+}
+
+/* Grille principale */
+.cv__grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  padding: 28px 28px 36px;
+}
+
+.section{
+  background: #fff;
+  border: 1px solid #eef0f4;
+  border-radius: 12px;
+  padding: 20px 20px 14px;
+}
+
+.section__title{
+  margin:0 0 12px;
+  font-size: 20px;
+  color:#0b2e67;
+  border-left: 6px solid var(--primary);
+  padding-left: 10px;
+}
+
+/* Cartes & lignes */
+.card{
+  border:1px solid #edf0f6;
+  border-radius:10px;
+  padding:16px;
+  margin-bottom:14px;
+  background:#fff;
+}
+
+.card__head{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  margin-bottom:8px;
+}
+
+.card__title{
+  margin:0;
+  font-size:16px;
+  color:#0b1930;
+}
+
+.card__meta{
+  font-size:13px;
+  color:var(--muted);
+}
+
+.card__desc{
+  margin:6px 0 8px;
+}
+
+.card__list{
+  margin:8px 0 0 18px;
+}
+
+/* Rows (formations) */
+.row{
+  display:flex;
+  gap:16px;
+  padding:12px 0;
+  border-bottom:1px dashed #e8ecf4;
+}
+.row:last-child{border-bottom:none}
+.row__main{flex:1}
+.row__aside{
+  min-width:100px;
+  text-align:right;
+  color:var(--muted);
+  font-weight:600;
+}
+.row__title{
+  margin:0 0 3px;
+  font-size:16px;
+  color:#0b1930;
+}
+.row__meta{
+  font-size:13px;
+  color:var(--muted);
+}
+.row__desc{margin:6px 0 0}
+
+/* Chips (tags) */
+.chip{
+  display:inline-block;
+  font-size:12px;
+  line-height:1;
+  padding:7px 10px;
+  margin:3px 3px 0 0;
+  border-radius:999px;
+  background: var(--chip);
+  border:1px solid var(--chip-border);
+  color:#16244b;
+  white-space:nowrap;
+}
+.chip--soft{
+  background:#ecfdf5;
+  border-color:#b6f0e5;
+  color:#065f56;
+}
+
+/* Compétences */
+.skill-group{margin-bottom:12px}
+.skill-group__title{
+  font-weight:600;
+  margin-bottom:6px;
+  color:#0b2e67;
+}
+.skill-group__chips{}
+
+/* Listes */
+.list{margin:8px 0 0 18px}
+
+/* Responsive */
+@media (min-width: 840px){
+  .cv__grid{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 520px){
+  .row{
+    flex-direction:column;
+    gap:6px;
+  }
+  .row__aside{
+    text-align:left;
+    min-width:auto;
+  }
+}
