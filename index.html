@@ -3,59 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>CV - Harry DEGBEGNI</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; background: #f9f9f9; color: #333; }
-    h1, h2 { color: #003366; }
-    h1 { border-bottom: 2px solid #003366; padding-bottom: 5px; }
-    .section { margin-bottom: 30px; }
-    .job, .formation, .skill, .hobby { margin-bottom: 15px; }
-    ul { margin: 5px 0 10px 20px; }
-    .header { text-align: center; }
-    .header h1 { margin: 0; }
-    .subtitle { font-style: italic; color: #666; }
-    .chips { display: inline-block; padding: 3px 8px; margin: 2px; background: #e0e0e0; border-radius: 12px; font-size: 13px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="header">
-    <h1 id="nom"></h1>
-    <p class="subtitle" id="note"></p>
-    <p><span id="age"></span> ans - <span id="taille"></span> cm</p>
-  </div>
+  <div class="container">
+    <header class="header">
+      <h1 id="nom"></h1>
+      <p class="subtitle" id="note"></p>
+      <p><span id="age"></span> ans - <span id="taille"></span> cm</p>
+    </header>
 
-  <div class="section">
-    <h2>Formations</h2>
-    <div id="formations"></div>
-  </div>
+    <main class="content">
+      <section class="section" id="formations-section">
+        <h2>Formations</h2>
+        <div id="formations"></div>
+      </section>
 
-  <div class="section">
-    <h2>Expériences professionnelles</h2>
-    <div id="experiences"></div>
-  </div>
+      <section class="section" id="experiences-section">
+        <h2>Expériences professionnelles</h2>
+        <div id="experiences"></div>
+      </section>
 
-  <div class="section">
-    <h2>Compétences</h2>
-    <div id="competences"></div>
-  </div>
+      <section class="section" id="competences-section">
+        <h2>Compétences</h2>
+        <div id="competences"></div>
+      </section>
 
-  <div class="section">
-    <h2>Expériences académiques</h2>
-    <div id="academiques"></div>
-  </div>
+      <section class="section" id="academiques-section">
+        <h2>Expériences académiques</h2>
+        <div id="academiques"></div>
+      </section>
 
-  <div class="section">
-    <h2>Langues</h2>
-    <ul id="langues"></ul>
-  </div>
+      <section class="section" id="langues-section">
+        <h2>Langues</h2>
+        <ul id="langues"></ul>
+      </section>
 
-  <div class="section">
-    <h2>Réalisations</h2>
-    <ul id="realisations"></ul>
-  </div>
+      <section class="section" id="realisations-section">
+        <h2>Réalisations</h2>
+        <ul id="realisations"></ul>
+      </section>
 
-  <div class="section">
-    <h2>Hobbies</h2>
-    <ul id="hobbies"></ul>
+      <section class="section" id="hobbies-section">
+        <h2>Hobbies</h2>
+        <ul id="hobbies"></ul>
+      </section>
+    </main>
   </div>
 
   <script>
@@ -82,14 +75,17 @@
         // Expériences
         let expDiv = document.getElementById("experiences");
         cv["Expériences Professionnelles"].forEach(e => {
-          let missions = e.Missions && e.Missions.length ? "<ul>" + e.Missions.filter(m=>m).map(m=>`<li>${m}</li>`).join("") + "</ul>" : "";
-          let techno = e["Principales Technologies"] && e["Principales Technologies"].length ? e["Principales Technologies"].filter(t=>t).map(t=>`<span class="chips">${t}</span>`).join(" ") : "";
+          let missions = (e.Missions || []).filter(m => m).map(m => `<li>${m}</li>`).join("");
+          let techno = (e["Principales Technologies"] || []).filter(t => t).map(t => `<span class="chips">${t}</span>`).join(" ");
+          let plusValue = (e["Plus Value"] || []).filter(p => p).map(p => `<span class="chips">${p}</span>`).join(" ");
+
           expDiv.innerHTML += `
             <div class="job">
               <strong>${e.Nom}</strong> – ${e.Entreprise} (${e.Période}, ${e.Localisation}) <br>
               <em>${e.Description}</em>
-              ${missions}
+              ${missions ? `<ul>${missions}</ul>` : ""}
               <div>${techno}</div>
+              <div>${plusValue}</div>
             </div>
           `;
         });
@@ -97,41 +93,49 @@
         // Compétences
         let compDiv = document.getElementById("competences");
         cv.Compétences.forEach(c => {
-          compDiv.innerHTML += `
-            <div class="skill">
-              <strong>${c.Nom} :</strong> ${c.Liste.map(l=>`<span class="chips">${l}</span>`).join(" ")}
-            </div>
-          `;
+          let items = (c.Liste || []).filter(l => l);
+          if (items.length) {
+            compDiv.innerHTML += `
+              <div class="skill">
+                <strong>${c.Nom} :</strong> ${items.map(l => `<span class="chips">${l}</span>`).join(" ")}
+              </div>
+            `;
+          }
         });
 
         // Expériences académiques
         let acadDiv = document.getElementById("academiques");
         cv["Expériences Académiques"].forEach(a => {
-          let realisations = a.Réalisation.map(r=>`<li><strong>${r.Intitulé} :</strong> ${r.Description}</li>`).join("");
-          acadDiv.innerHTML += `
-            <div>
-              <strong>${a.Programme}</strong>
-              <ul>${realisations}</ul>
-            </div>
-          `;
+          let realisations = (a.Réalisation || [])
+            .filter(r => r.Intitulé)
+            .map(r => `<li><strong>${r.Intitulé} :</strong> ${r.Description || ""}</li>`)
+            .join("");
+          if (realisations) {
+            acadDiv.innerHTML += `
+              <div>
+                <strong>${a.Programme}</strong>
+                <ul>${realisations}</ul>
+              </div>
+            `;
+          }
         });
 
         // Langues
         let langUl = document.getElementById("langues");
         cv.Langues.forEach(l => {
-          langUl.innerHTML += `<li>${l.Nom} – ${l.Niveau}</li>`;
+          if (l.Nom) langUl.innerHTML += `<li>${l.Nom} – ${l.Niveau || ""}</li>`;
         });
 
         // Réalisations
         let realUl = document.getElementById("realisations");
         cv.Réalisations.forEach(r => {
-          if(r.Nom) realUl.innerHTML += `<li><strong>${r.Nom} :</strong> ${r.Description}</li>`;
+          if (r.Nom) realUl.innerHTML += `<li><strong>${r.Nom} :</strong> ${r.Description || ""}</li>`;
         });
 
         // Hobbies
         let hobbyUl = document.getElementById("hobbies");
         cv.Hobbies.forEach(h => {
-          hobbyUl.innerHTML += `<li><strong>${h.Nom} :</strong> ${h.Description}</li>`;
+          if (h.Nom) hobbyUl.innerHTML += `<li><strong>${h.Nom} :</strong> ${h.Description || ""}</li>`;
         });
       });
   </script>
