@@ -2,49 +2,138 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon CV - <Ton nom></title>
+  <title>CV - Harry DEGBEGNI</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
-    h1 { color: #003366; }
-    h2 { color: #006699; border-bottom: 1px solid #ccc; padding-bottom: 3px; }
-    .section { margin-bottom: 20px; }
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; background: #f9f9f9; color: #333; }
+    h1, h2 { color: #003366; }
+    h1 { border-bottom: 2px solid #003366; padding-bottom: 5px; }
+    .section { margin-bottom: 30px; }
+    .job, .formation, .skill, .hobby { margin-bottom: 15px; }
+    ul { margin: 5px 0 10px 20px; }
+    .header { text-align: center; }
+    .header h1 { margin: 0; }
+    .subtitle { font-style: italic; color: #666; }
+    .chips { display: inline-block; padding: 3px 8px; margin: 2px; background: #e0e0e0; border-radius: 12px; font-size: 13px; }
   </style>
 </head>
 <body>
-  <h1><Ton Nom></h1>
-  <p><strong>Email :</strong> ton.email@exemple.com | <strong>Téléphone :</strong> 06 XX XX XX XX</p>
-
-  <div class="section">
-    <h2>À propos</h2>
-    <p>Ingénieur Data passionné, spécialisé en plateformes cloud, automatisation et visualisation de données. Esprit analytique, collaboratif et orienté impact métier.</p>
-  </div>
-
-  <div class="section">
-    <h2>Compétences</h2>
-    <ul>
-      <li>Snowflake, BigQuery, PostgreSQL</li>
-      <li>Python, SQL, dbt</li>
-      <li>Power BI, Tableau, Streamlit</li>
-      <li>CI/CD, Git, GitHub Actions, GitLab CI</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Expériences professionnelles</h2>
-    <p><strong>Data Engineer – Pochet du Courval</strong> (2023 - présent)</p>
-    <ul>
-      <li>Développement de la Data Platform Snowflake</li>
-      <li>Modélisation Bronze/Silver/Gold des données industrielles</li>
-    </ul>
-    <p><strong>Data Analyst – Stellantis</strong> (2022 - 2023)</p>
-    <ul>
-      <li>Optimisation de reporting marketing via BigQuery & Looker</li>
-    </ul>
+  <div class="header">
+    <h1 id="nom"></h1>
+    <p class="subtitle" id="note"></p>
+    <p><span id="age"></span> ans - <span id="taille"></span> cm</p>
   </div>
 
   <div class="section">
     <h2>Formations</h2>
-    <p>Master 2 – Data Science et Ingénierie – <em>Université Exemple</em> (2021)</p>
+    <div id="formations"></div>
   </div>
+
+  <div class="section">
+    <h2>Expériences professionnelles</h2>
+    <div id="experiences"></div>
+  </div>
+
+  <div class="section">
+    <h2>Compétences</h2>
+    <div id="competences"></div>
+  </div>
+
+  <div class="section">
+    <h2>Expériences académiques</h2>
+    <div id="academiques"></div>
+  </div>
+
+  <div class="section">
+    <h2>Langues</h2>
+    <ul id="langues"></ul>
+  </div>
+
+  <div class="section">
+    <h2>Réalisations</h2>
+    <ul id="realisations"></ul>
+  </div>
+
+  <div class="section">
+    <h2>Hobbies</h2>
+    <ul id="hobbies"></ul>
+  </div>
+
+  <script>
+    fetch("cv.json")
+      .then(res => res.json())
+      .then(cv => {
+        // Header
+        document.getElementById("nom").textContent = cv.Prénom + " " + cv.Nom;
+        document.getElementById("note").textContent = cv.Note;
+        document.getElementById("age").textContent = cv.Age;
+        document.getElementById("taille").textContent = cv.Taille;
+
+        // Formations
+        let formDiv = document.getElementById("formations");
+        cv.Formations.forEach(f => {
+          formDiv.innerHTML += `
+            <div class="formation">
+              <strong>${f.Nom}</strong> – ${f.Ecole} <br>
+              <em>${f.Période} – ${f.Localisation}</em>
+            </div>
+          `;
+        });
+
+        // Expériences
+        let expDiv = document.getElementById("experiences");
+        cv["Expériences Professionnelles"].forEach(e => {
+          let missions = e.Missions && e.Missions.length ? "<ul>" + e.Missions.filter(m=>m).map(m=>`<li>${m}</li>`).join("") + "</ul>" : "";
+          let techno = e["Principales Technologies"] && e["Principales Technologies"].length ? e["Principales Technologies"].filter(t=>t).map(t=>`<span class="chips">${t}</span>`).join(" ") : "";
+          expDiv.innerHTML += `
+            <div class="job">
+              <strong>${e.Nom}</strong> – ${e.Entreprise} (${e.Période}, ${e.Localisation}) <br>
+              <em>${e.Description}</em>
+              ${missions}
+              <div>${techno}</div>
+            </div>
+          `;
+        });
+
+        // Compétences
+        let compDiv = document.getElementById("competences");
+        cv.Compétences.forEach(c => {
+          compDiv.innerHTML += `
+            <div class="skill">
+              <strong>${c.Nom} :</strong> ${c.Liste.map(l=>`<span class="chips">${l}</span>`).join(" ")}
+            </div>
+          `;
+        });
+
+        // Expériences académiques
+        let acadDiv = document.getElementById("academiques");
+        cv["Expériences Académiques"].forEach(a => {
+          let realisations = a.Réalisation.map(r=>`<li><strong>${r.Intitulé} :</strong> ${r.Description}</li>`).join("");
+          acadDiv.innerHTML += `
+            <div>
+              <strong>${a.Programme}</strong>
+              <ul>${realisations}</ul>
+            </div>
+          `;
+        });
+
+        // Langues
+        let langUl = document.getElementById("langues");
+        cv.Langues.forEach(l => {
+          langUl.innerHTML += `<li>${l.Nom} – ${l.Niveau}</li>`;
+        });
+
+        // Réalisations
+        let realUl = document.getElementById("realisations");
+        cv.Réalisations.forEach(r => {
+          if(r.Nom) realUl.innerHTML += `<li><strong>${r.Nom} :</strong> ${r.Description}</li>`;
+        });
+
+        // Hobbies
+        let hobbyUl = document.getElementById("hobbies");
+        cv.Hobbies.forEach(h => {
+          hobbyUl.innerHTML += `<li><strong>${h.Nom} :</strong> ${h.Description}</li>`;
+        });
+      });
+  </script>
 </body>
 </html>

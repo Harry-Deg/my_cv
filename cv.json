@@ -1,0 +1,310 @@
+{
+    "Prénom":"Harry",
+    "Nom":"DEGBEGNI",
+    "Age":26,
+    "Sexe":"M",
+    "Taille":174,
+    "Note":"Data Enthousiaste",
+    "Formations":[
+        {
+            "Nom":"Master of Science Data Management",
+            "Ecole":"Paris School of Business (PSB) & EFREI",
+            "Période":"Octobre 2021 - Mars 2023",
+            "Localisation":"Paris",
+            "Niveau Étude":"BAC +6",
+            "Description":""
+        },
+        {
+            "Nom":"Diplôme d'Ingénieur Généraliste",
+            "Ecole":"ESIGELEC",
+            "Période":"Septembre 2018 - Août 2021",
+            "Localisation":"Rouen",
+            "Niveau Étude":"BAC +5",
+            "Description":""
+        },
+        {
+            "Nom":"Cours Préparatoire Grande École",
+            "Ecole":"Cycle préparatoie père Aupiais",
+            "Période":"Septembre 2016 - Août 2018",
+            "Localisation":"Cotonou, Bénin",
+            "Niveau Étude":"BAC +2",
+            "Description":"MPSI"
+        },
+        {
+            "Nom":"Baccalauréat Série C (Scientifique)",
+            "Ecole":"Cours Secondaire Saint Augustin CSSA",
+            "Période":"Secondaire",
+            "Localisation":"Cotonou, Bénin",
+            "Niveau Étude":"BAC",
+            "Description":"Mention Bien"
+        }
+    ],
+    "Expériences Professionnelles":[
+        {
+            "Nom":"Data Engineer",
+            "Entreprise":"Groupe POCHET",
+            "Période":"Novembre 2024 - Aujourd'hui",
+            "Localisation":"Clichy",
+            "Description":"Mise en place de la DataPlatform dans l'entreprise pour répondres aux différents besoin métiers qui émergent",
+            "Missions":[
+                "Mise en place et application du RACI ",
+                "Etablissement du Mapping  des tables",
+                "Responsable de l'architechture des données",
+                "Mise en place du pipeline de traitement des données",
+                "Orchestrastion Bronze - Silver - Gold",
+                "Développement de Chatbot pour répondre aux attentes métiers",
+                "Réalisation de dashboard por la restitutions des données",
+                "Etablissement des processus de déploiement",
+                ""
+            ],
+            "Principales Technologies":["Snowflake", "Blueway", "Oracle", "MySQL", "SAP", "Gitlab", "M3", "Copilot Studio", "Streamlit", "Tableau Software", ""],
+            "Plus Value":["Gestion de projet", "Structuration des Processus", "Communication métier", ""]
+        },
+        {
+            "Nom":"Data Engineer",
+            "Entreprise":"Astek",
+            "Client":"ACC",
+            "Période":"Mai 2023 - Juillet 2023",
+            "Localisation":"Bordeaux, Bruges",
+            "Description":"Ingestion des données des capteurs et des machines responsables de la fabrication des batteries vers les bases de données.",
+            "Missions":[
+                "Gestion et affectation des droits aux utilisateurs de la base de donnée",
+                "Implémentation des scripts responsables des différentes ingestions vers les différentes tables de la base de données",
+                "Réalisation de template des scripts d'ingestion",
+                "Mise en place de flows Node-Red pour l'industrialisation et l'automatisation des process d'ingestion",
+                "Mise en place de l'architecture d'ingestion des données pour un nouveau site",
+                "Rédaction de documentations de bonnes pratiques ou cheat-sheet pour la gestion de la base de donnée",
+                ""
+            ],
+            "Principales Technologies":["Python", "Postgre", "Node-Red", "DBeaver", "Azure DevOps", "Gitlab", ""],
+            "Plus Value":[" Communication", "Capacité multitâche", "Capacité d'intégration"]
+        },
+        {
+            "Nom":"Ingénieur Data",
+            "Entreprise":"Lectra",
+            "Période":"Octobre 2020 - Mars 2023",
+            "Localisation":"Bordeaux, Cestas",
+            "Description":"Chargé de la qualité et de l'accessiblilité des données émisses par les machines Lectra pour les différentes équipes et services de l'entreprise",
+            "Missions":[
+                "Etude de POC pour l'adoption de nouveaux outils pour l'amélioration de l'architechture",
+                "Analyse et comparaison de tables (Sacla Spark, Snowflake)",
+                "Maintenance des outils de monitoring, de tests et de traitement des données internes",
+                "Assisatance interne pour l'utilisation des outils de l'équipe par les autres équipes",
+                "Amélioration du pipeline de données ( Kafka, Scala, Kubernetes ...)",
+                "Intégration Continue et réalisations des tests unitaires et fonctionnelles",
+                "Réalisation et Visualisation de Dashboards sur les logs du pipeline et sur la qualité des données",
+                "Investigation et Résolution des demandes des clients (Cases clients pour le support Nv3)",
+                "Support et correction de problèmes remontés par le client",
+                "Sérialisation et Désérialisation de fichier Avro, JSON, ..."
+            ],
+            "Principales Technologies":["Kafka", "Scala", "Snowflake", "Bash", "Docker", "Kubernetes", "SQL", "Jenkins", "Gitlab", "Spark", "Databricks", "Groovy", "Cucumber", "Ansible", "Karate", "Kendo", "Popcorn", "Kotlin", "Ammonite", "sbt", "maven", "grafana", "prometheus", "splunk", "instana", "kafkaUI", ""],
+            "Plus Value":"Communication, Esprit d'équipe, "
+        },
+        {
+            "Nom":"Développeur Python",
+            "Entreprise":"My Universal Coaching Company",
+            "Période":"Juin 2020 - Août 2020",
+            "Localisation":"Allela, Espagne (Télétravail)",
+            "Description":"Mise en place d'un system d'alerte pour une plateforme de Trading pour la prise de décision",
+            "Missions":[
+                "Formation à la Finance pour le Trading",
+                "Mise en place d'alerte se basant sur différente technique d'anticipation de l'évolution des courbes",
+                "Réalisation de tests d’intégration avant la mise en Prod des Scripts",
+                "Intégration des alertes à la plateforme"
+            ],
+            "Principales Technologies":"Python, Pycharm, Anaconda, REST-API,",
+            "Plus Value":""
+        },
+        {
+            "Nom":"Agent d'Assemblage",
+            "Entreprise":"Renault",
+            "Période":"Juin 2019 - Juillet 2019",
+            "Localisation":"Cléon, France",
+            "Description":"Poste chargé de la mise en place de différents composant sur des moteurs de la marque",
+            "Missions":[
+                "Travail Manuel de mise en place de composant sur les moteurs",
+                "Préparation de la plateforme de tests",
+                "Tri de fiches de maintenance de composant"
+            ],
+            "Principales Technologies":"_",
+            "Plus Value":""
+        },
+        {
+            "Nom":"Agent de Maintenace",
+            "Entreprise":"ASECNA Agence pour la Sécurité de la Navigation Aérienne en Afrique et à Madagascar",
+            "Période":"Juin 2017",
+            "Localisation":"Cotonou, Bénin",
+            "Description":"Unité CNS (Communication, Navigation et Surveillance)",
+            "Missions":[
+                "Travail Manuel",
+                "Réinstallé l'antenne HF (haute fréquence",
+                "Cartes électroniques vérifiées des équipements d'aide à la navigation aérienne",
+                "Piste d'atterrissage inspectée quotidiennement"
+            ],
+            "Principales Technologies":"_",
+            "Plus Value":""
+        }
+    ],
+    "Compétences":[
+        {
+            "Nom":"Language de Programmation",
+            "Liste":["Scala", "Python", "R", "SQL", "Bash", "JavaScript", "Java", "C", "Kotlin", "Groovy", "HTML", "CSS", "JSON", "XML", "YAML", "PHP", "Asciidoc"]
+        },
+        {
+            "Nom":"Techno Data",
+            "Liste":["Docker", "Kafka", "Spark", "Kubernetes", "Databricks", "Hadoop", "Hive", "RDD"]
+        },
+        {
+            "Nom":"Outils",
+            "Liste": ["Jsonnet", "Soda", "Great Expectation", "Postman", "Karate", "Kapoeira, Gherkins Syntax" ]
+        },
+        {
+            "Nom":"Techno Informatique",
+            "Liste":["Gitlab", "Visual Studio", "Jenkins", "IntelIJ", "Jupyter Notebook", "Linux", "Pack Office", "Node-Red", "Blueway", ""]
+        },
+        {
+            "Nom":"Base de Données",
+            "Liste":["Snowflake", "Azure Datalake", "SQL Server", "PostgreSQL", "MongoDB", "Oracle", ""]
+        },
+        {
+            "Nom":"Data Vizualisation",
+            "Liste":["PowerBI", "Tableau", "SAP BO", "SAS", "QlikSens", "ArcGis"]
+        },
+        {
+            "Nom":"Méthodologie de Travail",
+            "Liste":["Kanban", "Méthode Agile"]
+        }
+    ],
+    "Expériences Académiques":[
+        {
+            "Programme":"PSB",
+            "Réalisation":[
+                {
+                    "Intitulé":"Data Workshop Napolitain",
+                    "Description":"Prédiction des prix de Résidence AirBnB en R en utilisant la Régression Linéraire Multivariable après avoir effectuer un travail de nettoyage du dataset proposé (enlever les outliers, remplacer les cases vides, uniformiser le format des colonnes)"
+                },
+                {
+                    "Intitulé":"Dashboard Streamlit",
+                    "Description":"Réalisation d'un Dashboard Temps réel présentant la consommation en Énergie Electrique et Gaz en France en Python sur Streamlit"
+                },
+                {
+                    "Intitulé":"Master Class (RSE Responsabilité Sociétale Environnementale)",
+                    "Description":"Présentation de l'impact Environnementale des Entreprises face aux RSE en se basant sur un dataset liés à une pollution choisi"
+                },
+                {
+                    "Intitulé":"Data Challenge (RSE Responsabilité Sociétale Environnementale)",
+                    "Description":"Réalisation d'un Dashboard Simple facile à comprendre présentant l'ètat actuel de l'impact environnemental des entreprises grâce à des données RSE après avoir pondérer et scorer ces différents impacts et leurs Engagements pour le RSE"
+                },
+                {
+                    "Intitulé":"Supervised and Unsupervised Learning",
+                    "Description":"Comparaison de différents Modèles de machnes Learning afin d'identifier le plus adapter à un dataset donnée en comparant les Scores d'évaluations"
+                },
+                {
+                    "Intitulé":"Digital Marketing",
+                    "Description":"Mise en place d'une campagne en ligne pour l'introduction de la Marque 'La Pièce Paris' en Belgique (Réalisation du spot, montage vidéo, rédaction de l'état de l'art, ...)"
+                }
+            ]
+        },
+        {
+            "Programme":"ESIGELEC",
+            "Réalisation":[
+                {
+                    "Intitulé":"Projet Ingénieur (PING)",
+                    "Description":""
+                },
+                {
+                    "Intitulé":"Prédiction Accident Routier",
+                    "Description":"Application des méthodologies de machine learning aux données des accidents routiers croisés aux données météorologiques en France. (Réalisation de l’étude avec Jupyter NoteBook en Python, Mise en place de graphiques de prédictions avec les librairies matplotlib et seaborn, Utilisation des modèles de Linear Regression, Decision Tree)"
+                },
+                {
+                    "Intitulé":"Programmation Voiture Arduino",
+                    "Description":"Programmation de deux mini voitures autonomes, l'une ayant pour but de suivre un chemin tracé de couleur noir et l'autre chargé de suivre la première mini voiture comme un convoit"
+                },
+                {
+                    "Intitulé":"Plateforme de Gestion des Médicaments dans un Hopital (Projet S8)",
+                    "Description":"Développer une application permettant de faciliter l’accès à un maximum d’informations relatives aux médicaments vendus en France :(Transformation des données en donnes exploitables, Réalisation de divers Modèles, Vues et Contrôleurs, Sécurisation de la connexion au serveur tomcat)"
+                },
+                {
+                    "Intitulé":"Architechture et Service du Cloud",
+                    "Description":"Création d'un site internet pour gérer une banque de films (Création d'une API Web avec Visual Studio en C#, Insertion de données grâce à une API REST basée sur les technologies Microsoft ASP.NET Core, Stockage de données avec EF Core dans la base de données SQL Server)"
+                },
+                {
+                    "Intitulé":"Projet Innovation et Culturalité (PIC)",
+                    "Description":"Présentation de la culture Japonaise et Béninoise dans une maison de retraite à travers divers activité (origami) et degustation de met de ces origines"
+                }
+            ]
+        },
+        {
+            "Programme":"CPPA",
+            "Réalisation":[
+                {
+                    "Intitulé":"Bataille Navale",
+                    "Description":"Programmation du Jeu la Bataille Navale en C avec Code Block"
+                }
+            ]
+        } 
+    ],
+    "Langues":[
+        {
+            "Nom":"Francais",
+            "Niveau":"Natale"
+        },
+        {
+            "Nom":"Anglais",
+            "Niveau":"TOEIC 845, B2, Confirmé"
+        },
+        {
+            "Nom":"Japonais",
+            "Niveau":"Débutant, en cours d'amélioration"
+        },
+        {
+            "Nom":"Allemand",
+            "Niveau":"Débutant"
+        }
+    ],
+    "Réalisations":[
+        {
+            "Nom":"1er prix Data Challenge",
+            "Description":"Dashboard présentant l'impact environnementale des entreprises et leurs Engagements RSE"
+        },
+        {
+            "Nom":"1er Prix KAMA Project",
+            "Description":"Projet Hors programme ESIGELEC Initiation à la création d’entreprise ( Proposition de Projet portant sur le développement de l'Afrique ) Meilleur projet écologique et Innovant"
+        },
+        {}
+    ],
+    "Hobbies":[
+        {
+            "Nom":"Basket",
+            "Description":"Pratiqué depuis 10 ans"
+        },
+        {
+            "Nom":"Escalade",
+            "Description":"Amateur des blocs"
+        },
+        {
+            "Nom":"Danse",
+            "Description":"Pratiqué pendant 4 ans, responsable pôle Événementiel Esig'Danse, Club de Danse de l'ESIGELEC, chargé de l'identité visuel, réalisation des posters "
+        },
+        {
+            "Nom":"Photographie",
+            "Description":"Amateur de photo de paysage et de portrait, pour les blogs, les voyages, les événements, réalisation de montages et retouche de photos. [Canon R10]"
+        },
+        {
+            "Nom":"Voyage",
+            "Description":"Découverte des paysages des cultures et des activités (Belgique, Portugal, Espagne, Italie, Allemagne, Suisse, Autriche, Afrique du Sud, Ghana, Sénégal)"
+        },
+        {
+            "Nom":"Snowboard",
+            "Description":"Découvert lors d'un voyage CE et accro à la glisse"
+        },
+        {
+            "Nom":"Natation",
+            "Description":"En terme de distraction"
+        },
+        {
+            "Nom":"Cuisine",
+            "Description":"Fin Cordon bleu de mets Africains, Français et de tout genre, de Patisserie etc"
+        }
+    ]
+}
