@@ -57,7 +57,7 @@
                 "Etablissement des processus de déploiement",
                 "_"
             ],
-            "Principales Technologies":["Snowflake", "Blueway", "Oracle", "MySQL", "SAP", "Gitlab", "M3", "Copilot Studio", "Streamlit", "Tableau Software"],
+            "Principales Technologies":["Snowflake", "Blueway", "AWS S3", "Oracle", "MySQL", "SAP", "Gitlab", "M3", "Copilot Studio", "Streamlit", "Tableau Software"],
             "Plus Value":["Gestion de projet", "Structuration des Processus", "Communication métier"]
         },
         {
@@ -164,7 +164,7 @@
         },
         {
             "Nom":"Base de Données",
-            "Liste":["Snowflake", "Azure Datalake", "SQL Server", "PostgreSQL", "MongoDB", "Oracle"]
+            "Liste":["Snowflake", "Azure Datalake", "AWS S3 ","SQL Server", "PostgreSQL", "MongoDB", "Oracle"]
         },
         {
             "Nom":"Data Vizualisation",
