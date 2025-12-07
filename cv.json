@@ -1,10 +1,11 @@
 {
     "Prénom":"Harry",
     "Nom":"DEGBEGNI",
-    "Age":26,
+    "Age":27,
     "Sexe":"M",
     "Taille":174,
     "Note":"Data Enthousiaste",
+    "LinkedIn":"https://www.linkedin.com/in/harry-degbegni/",
     "Formations":[
         {
             "Nom":"Master of Science Data Management",
@@ -20,7 +21,7 @@
             "Période":"Septembre 2018 - Août 2021",
             "Localisation":"Rouen",
             "Niveau Étude":"BAC +5",
-            "Description":"_"
+            "Description":"Spécialisation Big Data"
         },
         {
             "Nom":"Cours Préparatoire Grande École",
@@ -45,11 +46,11 @@
             "Entreprise":"Groupe POCHET",
             "Période":"Novembre 2024 - Aujourd'hui",
             "Localisation":"Clichy",
-            "Description":"Mise en place de la DataPlatform dans l'entreprise pour répondres aux différents besoin métiers qui émergent",
+            "Description":"Mise en place de la DataPlatform dans l'entreprise pour répondres aux différents besoins métiers qui émergent",
             "Missions":[
                 "Mise en place et application du RACI ",
-                "Etablissement du Mapping  des tables",
-                "Responsable de l'architechture des données",
+                "Etablissement du Mapping de l'architecture des tables",
+                "Responsable de l'architecture des données",
                 "Mise en place du pipeline de traitement des données",
                 "Orchestrastion Bronze - Silver - Gold",
                 "Développement de Chatbot pour répondre aux attentes métiers",
@@ -57,16 +58,16 @@
                 "Etablissement des processus de déploiement",
                 "_"
             ],
-            "Principales Technologies":["Snowflake", "Blueway", "AWS S3", "Oracle", "MySQL", "SAP", "Gitlab", "M3", "Copilot Studio", "Streamlit", "Tableau Software"],
+            "Principales Technologies":["Snowflake", "Blueway", "AWS S3", "Oracle", "MySQL", "SAP", "Gitlab", "M3", "Copilot Studio", "Streamlit", "Tableau Software", "MES Vertech"],
             "Plus Value":["Gestion de projet", "Structuration des Processus", "Communication métier"]
         },
         {
             "Nom":"Data Engineer",
             "Entreprise":"Astek",
             "Client":"ACC",
-            "Période":"Mai 2023 - Juillet 2023",
+            "Période":"Mai 2023 - Juillet 2024",
             "Localisation":"Bordeaux, Bruges",
-            "Description":"Ingestion des données des capteurs et des machines responsables de la fabrication des batteries vers les bases de données.",
+            "Description":"Ingestion des données des capteurs et des machines responsables de la fabrication des batteries de voitures vers les bases de données.",
             "Missions":[
                 "Gestion et affectation des droits aux utilisateurs de la base de donnée",
                 "Implémentation des scripts responsables des différentes ingestions vers les différentes tables de la base de données",
@@ -86,7 +87,7 @@
             "Localisation":"Bordeaux, Cestas",
             "Description":"Chargé de la qualité et de l'accessiblilité des données émisses par les machines Lectra pour les différentes équipes et services de l'entreprise",
             "Missions":[
-                "Etude de POC pour l'adoption de nouveaux outils pour l'amélioration de l'architechture",
+                "Etude de POC pour l'adoption de nouveaux outils pour l'amélioration de l'architecture",
                 "Analyse et comparaison de tables (Sacla Spark, Snowflake)",
                 "Maintenance des outils de monitoring, de tests et de traitement des données internes",
                 "Assisatance interne pour l'utilisation des outils de l'équipe par les autres équipes",
@@ -156,7 +157,7 @@
         },
         {
             "Nom":"Outils",
-            "Liste": ["Jsonnet", "Soda", "Great Expectation", "Postman", "Karate", "Kapoeira, Gherkins Syntax" ]
+            "Liste": ["Jsonnet", "Soda", "Great Expectation", "Postman", "Karate", "Kapoeira, Gherkins Syntax"]
         },
         {
             "Nom":"Techno Informatique",
@@ -172,7 +173,7 @@
         },
         {
             "Nom":"Méthodologie de Travail",
-            "Liste":["Kanban", "Méthode Agile"]
+            "Liste":["Kanban", "Méthode Agile", "Agile DSDM"]
         }
     ],
     "Expériences Académiques":[
@@ -210,7 +211,7 @@
             "Réalisation":[
                 {
                     "Intitulé":"Projet Ingénieur (PING)",
-                    "Description":"_"
+                    "Description":"_Projet réalisé pour la BNP"
                 },
                 {
                     "Intitulé":"Prédiction Accident Routier",
@@ -225,7 +226,7 @@
                     "Description":"Développer une application permettant de faciliter l’accès à un maximum d’informations relatives aux médicaments vendus en France :(Transformation des données en donnes exploitables, Réalisation de divers Modèles, Vues et Contrôleurs, Sécurisation de la connexion au serveur tomcat)"
                 },
                 {
-                    "Intitulé":"Architechture et Service du Cloud",
+                    "Intitulé":"Architecture et Service du Cloud",
                     "Description":"Création d'un site internet pour gérer une banque de films (Création d'une API Web avec Visual Studio en C#, Insertion de données grâce à une API REST basée sur les technologies Microsoft ASP.NET Core, Stockage de données avec EF Core dans la base de données SQL Server)"
                 },
                 {
@@ -296,15 +297,15 @@
         },
         {
             "Nom":"Snowboard",
-            "Description":"Découvert lors d'un voyage CE et accro à la glisse"
+            "Description":"Découvert lors d'un voyage du CSE et accro à la glisse"
         },
         {
             "Nom":"Natation",
-            "Description":"En terme de distraction"
+            "Description":"Amateur de longueur"
         },
         {
             "Nom":"Cuisine",
-            "Description":"Fin Cordon bleu de mets Africains, Français et de tout genre, de Patisserie etc"
+            "Description":"Fin Cordon bleu"
         }
     ]
 }
