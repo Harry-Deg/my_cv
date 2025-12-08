@@ -49,7 +49,7 @@
             "Description":"Mise en place de la DataPlatform dans l'entreprise pour répondres aux différents besoins métiers qui émergent",
             "Missions":[
                 "Mise en place et application du RACI ",
-                "Etablissement du Mapping de l'architecture des tables",
+                "Etablissement du mapping de l'architecture des tables",
                 "Responsable de l'architecture des données",
                 "Mise en place du pipeline de traitement des données",
                 "Orchestrastion Bronze - Silver - Gold",
