@@ -62,7 +62,7 @@
                 "Animation des clubs d'acculturation IA et Tableau Software",
                 "Réalisation de dashboard por la restitutions des données",
                 "Structuration des processus de déploiement",
-                "_"
+                "-"
             ],
             "Principales Technologies":["Snowflake", "Blueway", "AWS S3", "Oracle", "MySQL", "SAP", "Gitlab", "M3", "Copilot Studio", "Streamlit", "Tableau Software", "MES Vertech"],
             "Plus Value":["Gestion de projet", "Structuration des Processus", "Communication métier"]
@@ -81,7 +81,7 @@
                 "Mise en place de flows Node-Red pour l'industrialisation et l'automatisation des process d'ingestion",
                 "Mise en place de l'architecture d'ingestion des données pour les nouveaux sites (usines)",
                 "Rédaction de documentations de bonnes pratiques ou cheat-sheet pour la gestion de la base de donnée",
-                "_"
+                "-"
             ],
             "Principales Technologies":["Python", "Postgre", "Node-Red", "DBeaver", "Azure DevOps", "Gitlab"],
             "Plus Value":["Communication", "Capacité multitâche", "Capacité d'intégration"]
@@ -119,7 +119,8 @@
                 "Formation à la Finance pour le Trading",
                 "Mise en place d'alerte se basant sur différente technique d'anticipation de l'évolution des courbes",
                 "Réalisation de tests d’intégration avant la mise en Prod des Scripts",
-                "Intégration des alertes à la plateforme"
+                "Intégration des alertes à la plateforme",
+                "-"
             ],
             "Principales Technologies":"Python, Pycharm, Anaconda, REST-API,",
             "Plus Value":"_"
