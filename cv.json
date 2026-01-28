@@ -4,7 +4,7 @@
     "Age":27,
     "Sexe":"M",
     "Taille":174,
-    "Note":"Data Enthousiaste",
+    "Note":"Data Engineer",
     "LinkedIn":"https://www.linkedin.com/in/harry-degbegni/",
     "Formations":[
         {
@@ -48,14 +48,17 @@
             "Localisation":"Clichy",
             "Description":"Mise en place de la DataPlatform dans l'entreprise pour répondres aux différents besoins métiers qui émergent",
             "Missions":[
-                "Mise en place et application du RACI ",
+                "Prise en charge de l'ensemble du support de la DataPlatform",
+                "Mise en place et application du RACI (Responsible, Accountable, Consulted, Informed)",
+                "Documentation des projets et des process de la DataPlatform",
                 "Etablissement du mapping de l'architecture des tables",
-                "Responsable de l'architecture des données",
+                "Pilotage de la montée en compétences sur Snowflake",
                 "Mise en place du pipeline de traitement des données",
-                "Orchestrastion Bronze - Silver - Gold",
+                "Orchestrastion Flux Médaillon (Bronze - Silver - Gold)",
+                "Veille technologique de l'IA Snowflake avec les agents Cortex",
                 "Développement de Chatbot pour répondre aux attentes métiers",
                 "Réalisation de dashboard por la restitutions des données",
-                "Etablissement des processus de déploiement",
+                "Structuration des processus de déploiement",
                 "_"
             ],
             "Principales Technologies":["Snowflake", "Blueway", "AWS S3", "Oracle", "MySQL", "SAP", "Gitlab", "M3", "Copilot Studio", "Streamlit", "Tableau Software", "MES Vertech"],
@@ -88,12 +91,13 @@
             "Description":"Chargé de la qualité et de l'accessiblilité des données émisses par les machines Lectra pour les différentes équipes et services de l'entreprise",
             "Missions":[
                 "Etude de POC pour l'adoption de nouveaux outils pour l'amélioration de l'architecture",
-                "Analyse et comparaison de tables (Sacla Spark, Snowflake)",
+                "Déploiement d'outil d'analyse de la qualité des données (Great Expectation)",
+                "Analyse et comparaison de tables (Scala, Spark, Snowflake)",
                 "Maintenance des outils de monitoring, de tests et de traitement des données internes",
-                "Assisatance interne pour l'utilisation des outils de l'équipe par les autres équipes",
+                "Transmission de connaissance en interne sur la prise en main d'outils",
                 "Amélioration du pipeline de données ( Kafka, Scala, Kubernetes ...)",
-                "Intégration Continue et réalisations des tests unitaires et fonctionnelles",
-                "Réalisation et Visualisation de Dashboards sur les logs du pipeline et sur la qualité des données",
+                "Intégration Continue (CI/CD) et réalisations des tests unitaires et fonctionnelles",
+                "Réalisation et Visualisation de Dashboards sur les logs du pipeline (Grafana, PowerBI)",
                 "Investigation et Résolution des demandes des clients (Cases clients pour le support Nv3)",
                 "Support et correction de problèmes remontés par le client",
                 "Sérialisation et Désérialisation de fichier Avro, JSON, ..."
