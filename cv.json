@@ -4,7 +4,7 @@
     "Age":27,
     "Sexe":"M",
     "Taille":174,
-    "Note":"Data Engineer",
+    "Note":"Data & IA Engineer",
     "LinkedIn":"https://www.linkedin.com/in/harry-degbegni/",
     "Formations":[
         {
@@ -57,6 +57,9 @@
                 "Orchestrastion Flux Médaillon (Bronze - Silver - Gold)",
                 "Veille technologique de l'IA Snowflake avec les agents Cortex",
                 "Développement de Chatbot pour répondre aux attentes métiers",
+                "Recueil formalisation et interprétation fonctionnelle des besoins métier",
+                "Planning et chiffrage des projets data",
+                "Animation des clubs d'acculturation IA et Tableau Software",
                 "Réalisation de dashboard por la restitutions des données",
                 "Structuration des processus de déploiement",
                 "_"
@@ -76,15 +79,15 @@
                 "Implémentation des scripts responsables des différentes ingestions vers les différentes tables de la base de données",
                 "Réalisation de template des scripts d'ingestion",
                 "Mise en place de flows Node-Red pour l'industrialisation et l'automatisation des process d'ingestion",
-                "Mise en place de l'architecture d'ingestion des données pour un nouveau site",
+                "Mise en place de l'architecture d'ingestion des données pour les nouveaux sites (usines)",
                 "Rédaction de documentations de bonnes pratiques ou cheat-sheet pour la gestion de la base de donnée",
                 "_"
             ],
             "Principales Technologies":["Python", "Postgre", "Node-Red", "DBeaver", "Azure DevOps", "Gitlab"],
-            "Plus Value":[" Communication", "Capacité multitâche", "Capacité d'intégration"]
+            "Plus Value":["Communication", "Capacité multitâche", "Capacité d'intégration"]
         },
         {
-            "Nom":"Ingénieur Data",
+            "Nom":"Data Engineer",
             "Entreprise":"Lectra",
             "Période":"Octobre 2020 - Mars 2023",
             "Localisation":"Bordeaux, Cestas",
@@ -100,10 +103,11 @@
                 "Réalisation et Visualisation de Dashboards sur les logs du pipeline (Grafana, PowerBI)",
                 "Investigation et Résolution des demandes des clients (Cases clients pour le support Nv3)",
                 "Support et correction de problèmes remontés par le client",
-                "Sérialisation et Désérialisation de fichier Avro, JSON, ..."
+                "Sérialisation et Désérialisation de fichier Avro, JSON, ...",
+                "-"
             ],
             "Principales Technologies":["Kafka", "Scala", "Snowflake", "Bash", "Docker", "Kubernetes", "SQL", "Jenkins", "Gitlab", "Spark", "Databricks", "Groovy", "Cucumber", "Ansible", "Karate", "Kendo", "Popcorn", "Kotlin", "Ammonite", "sbt", "maven", "grafana", "prometheus", "splunk", "instana", "kafkaUI"],
-            "Plus Value":"Communication, Esprit d'équipe, "
+            "Plus Value":["Communication", "Esprit d'équipe","Autonomie opérationnelle", "Adoption de bonnes pratiques professionnelles"]
         },
         {
             "Nom":"Développeur Python",
