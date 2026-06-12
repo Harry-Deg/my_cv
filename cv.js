@@ -191,25 +191,9 @@
 
   function renderHobbies(hobbies) {
     var html = "";
-    var spans = ["span4", "span4", "span4", "span3", "span3", "span4", "span4", "span4"];
-
-    for (var i = 0; i < Math.min(3, hobbies.length); i++) {
-      html += hobbyCard(hobbies[i], spans[i], i > 0 ? i : null);
+    for (var i = 0; i < hobbies.length; i++) {
+      html += hobbyCard(hobbies[i], "span4", i > 0 ? i : null);
     }
-
-    html += '<div class="span6 photo rev" data-d="1">' +
-      '<image-slot id="photo1" class="photo-slot" shape="rounded" radius="16"' +
-      ' placeholder="Une de vos photos (paysage / portrait)"></image-slot>' +
-    '</div>';
-
-    for (var j = 3; j < Math.min(5, hobbies.length); j++) {
-      html += hobbyCard(hobbies[j], "span3", j - 2);
-    }
-
-    for (var k = 5; k < hobbies.length; k++) {
-      html += hobbyCard(hobbies[k], "span4", k > 5 ? k - 5 : null);
-    }
-
     return html;
   }
 
