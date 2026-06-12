@@ -488,6 +488,9 @@ em.mark{ font-style: italic; font-family: var(--display); color: var(--ink); }
 .life-card__t{ font-family: var(--display); font-size: 25px; margin: 0 0 6px; }
 .life-card__d{ font-size: 14.5px; color: var(--ink-soft); margin: 0; }
 .life-card__y{ margin-top: auto; font-family: var(--mono); font-size: 11px; letter-spacing:.06em; color: var(--accent); padding-top: 14px; }
+a.life-card{ text-decoration: none; color: inherit; cursor: pointer; transition: transform .18s ease, box-shadow .18s ease; }
+a.life-card:hover{ transform: translateY(-3px); box-shadow: 0 14px 32px rgba(33,28,23,.12); }
+.life-card__link{ margin-top: auto; font-family: var(--mono); font-size: 11px; letter-spacing:.06em; color: var(--accent); padding-top: 14px; }
 .span4{ grid-column: span 4; }
 .span6{ grid-column: span 6; }
 .span3{ grid-column: span 3; }

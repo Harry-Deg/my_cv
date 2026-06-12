@@ -178,16 +178,23 @@
     '</div>';
   }
 
+  function hobbyCard(h, spanClass, delay) {
+    var attrs = ' class="life-card ' + spanClass + ' rev"' + (delay ? ' data-d="' + delay + '"' : '');
+    var inner = '<h3 class="life-card__t">' + esc(h["Nom"]) + '</h3>' +
+      '<p class="life-card__d">' + esc(h["Description"]) + '</p>';
+    if (h["Lien"]) {
+      inner += '<span class="life-card__link">Voir le portfolio →</span>';
+      return '<a href="' + esc(h["Lien"]) + '" target="_blank" rel="noopener"' + attrs + '>' + inner + '</a>';
+    }
+    return '<div' + attrs + '>' + inner + '</div>';
+  }
+
   function renderHobbies(hobbies) {
     var html = "";
     var spans = ["span4", "span4", "span4", "span3", "span3", "span4", "span4", "span4"];
 
     for (var i = 0; i < Math.min(3, hobbies.length); i++) {
-      var h = hobbies[i];
-      html += '<div class="life-card ' + spans[i] + ' rev"' + (i > 0 ? ' data-d="' + i + '"' : '') + '>' +
-        '<h3 class="life-card__t">' + esc(h["Nom"]) + '</h3>' +
-        '<p class="life-card__d">' + esc(h["Description"]) + '</p>' +
-      '</div>';
+      html += hobbyCard(hobbies[i], spans[i], i > 0 ? i : null);
     }
 
     html += '<div class="span6 photo rev" data-d="1">' +
@@ -196,17 +203,11 @@
     '</div>';
 
     for (var j = 3; j < Math.min(5, hobbies.length); j++) {
-      html += '<div class="life-card span3 rev" data-d="' + (j - 2) + '">' +
-        '<h3 class="life-card__t">' + esc(hobbies[j]["Nom"]) + '</h3>' +
-        '<p class="life-card__d">' + esc(hobbies[j]["Description"]) + '</p>' +
-      '</div>';
+      html += hobbyCard(hobbies[j], "span3", j - 2);
     }
 
     for (var k = 5; k < hobbies.length; k++) {
-      html += '<div class="life-card span4 rev"' + (k > 5 ? ' data-d="' + (k - 5) + '"' : '') + '>' +
-        '<h3 class="life-card__t">' + esc(hobbies[k]["Nom"]) + '</h3>' +
-        '<p class="life-card__d">' + esc(hobbies[k]["Description"]) + '</p>' +
-      '</div>';
+      html += hobbyCard(hobbies[k], "span4", k > 5 ? k - 5 : null);
     }
 
     return html;
