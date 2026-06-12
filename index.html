@@ -2,184 +2,323 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>CV — Harry DEGBEGNI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Harry Degbegni — Data &amp; IA Engineer</title>
+  <meta name="description" content="Le parcours d'Harry Degbegni, Data & IA Engineer — du présent chez Groupe Pochet jusqu'à ses tout débuts." />
+  <link rel="stylesheet" href="cv.css" />
 </head>
-<body>
-  <div class="cv">
-    <!-- En-tête -->
-    <header class="cv__header">
-      <div class="cv__id">
-        <h1 id="nom" class="cv__name">Harry DEGBEGNI</h1>
-        <p id="note" class="cv__tagline">Data & IA Engineer</p>
-        <p class="cv__meta">
-          <span id="age"></span> ans •
-          <span id="taille"></span> cm •
-          <span id="sexe"></span>
-        </p>
+<body class="grain-on" data-density="standard" style="background-color: rgb(225, 238, 241)">
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="rail" aria-label="Repères chronologiques"></nav>
+
+  <!-- ============================ HERO ============================ -->
+  <header class="hero" data-year="Aujourd'hui" data-screen-label="Héro" style="background-color: rgb(17, 36, 51)">
+    <canvas id="hero-shader" class="hero__bg" aria-hidden="true"></canvas>
+    <div class="hero__veil" aria-hidden="true"></div>
+    <span class="hero__hint" aria-hidden="true">Bougez la souris · cliquez</span>
+    <div class="wrap">
+      <div class="hero__grid">
+        <div class="hero__intro-col">
+          <p class="hero__eyebrow rev">
+            <span class="dot-live"></span> Clichy, France · En poste
+          </p>
+          <h1 class="hero__name rev" data-d="1">Harry<br />Degbegni</h1>
+          <p class="hero__role rev" data-d="2">Data &amp; IA Engineer</p>
+          <p class="hero__intro rev" data-d="3">
+            Je transforme des données dispersées en plateformes sur lesquelles les métiers
+            peuvent <strong>décider</strong>. Aujourd'hui je bâtis la DataPlatform du
+            <strong>Groupe Pochet</strong>. Faites défiler pour remonter le fil — du présent
+            jusqu'à mes tout premiers circuits.
+          </p>
+          <div class="scrollcue rev" data-d="4">
+            <span class="scrollcue__line"></span> Remontez le temps
+          </div>
+        </div>
+        <div class="hero__portrait rev" data-d="2">
+          <image-slot id="portrait" class="portrait-slot" shape="rounded" radius="18"
+            placeholder="Glissez votre portrait"></image-slot>
+          <p class="portrait-cap">Harry D. · 27 ans · Data &amp; IA Engineer</p>
+        </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main class="cv__grid">
-      <!-- Colonne principale -->
-      <section class="section">
-        <h2 class="section__title">Expériences professionnelles</h2>
-        <div id="experiences" class="timeline"></div>
-      </section>
+  <!-- ===================== TECH CONSTELLATION ===================== -->
+  <section class="stack-sec" data-screen-label="Nuage de technos">
+    <div class="wrap">
+      <div class="stack-head rev">
+        <p class="eyebrow" style="justify-content:center">Mon outillage</p>
+        <h2 class="display">Ce avec quoi je bâtis</h2>
+        <p>Le moteur, le pipeline, l'orchestration, la restitution. Survolez une tuile —
+          chaque logo est un chapitre de ce que je sais faire.</p>
+      </div>
 
-      <section class="section">
-        <h2 class="section__title">Formations</h2>
-        <div id="formations"></div>
-      </section>
+      <div class="constellation">
+        <span class="tech tech--lg" data-name="Snowflake" data-icon="snowflake"></span>
+        <span class="tech tech--lg" data-name="Python" data-icon="python"></span>
+        <span class="tech tech--lg" data-name="Apache Kafka" data-icon="apachekafka"></span>
+        <span class="tech tech--lg" data-name="Apache Spark" data-icon="apachespark"></span>
+        <span class="tech tech--lg" data-name="Docker" data-icon="docker"></span>
+        <span class="tech tech--lg" data-name="Kubernetes" data-icon="kubernetes"></span>
 
-      <section class="section">
-        <h2 class="section__title">Compétences</h2>
-        <div id="competences" class="skills"></div>
-      </section>
+        <span class="tech" data-name="Scala" data-icon="scala"></span>
+        <span class="tech" data-name="Databricks" data-icon="databricks"></span>
+        <span class="tech" data-name="AWS S3" data-icon="amazons3"></span>
+        <span class="tech" data-name="Tableau" data-icon="tableau"></span>
+        <span class="tech" data-name="PostgreSQL" data-icon="postgresql"></span>
+        <span class="tech" data-name="GitLab" data-icon="gitlab"></span>
+        <span class="tech" data-name="Streamlit" data-icon="streamlit"></span>
+        <span class="tech" data-name="Oracle" data-icon="oracle"></span>
 
-      <section class="section">
-        <h2 class="section__title">Expériences académiques</h2>
-        <div id="academiques"></div>
-      </section>
+        <span class="tech tech--sm" data-name="Grafana" data-icon="grafana"></span>
+        <span class="tech tech--sm" data-name="Jenkins" data-icon="jenkins"></span>
+        <span class="tech tech--sm" data-name="Ansible" data-icon="ansible"></span>
+        <span class="tech tech--sm" data-name="MySQL" data-icon="mysql"></span>
+        <span class="tech tech--sm" data-name="MongoDB" data-icon="mongodb"></span>
+        <span class="tech tech--sm" data-name="Prometheus" data-icon="prometheus"></span>
+        <span class="tech tech--sm" data-name="Linux" data-icon="linux"></span>
+        <span class="tech tech--sm" data-name="SAP" data-icon="sap"></span>
+        <span class="tech tech--sm" data-name="Azure DevOps" data-icon="azuredevops"></span>
+        <span class="tech tech--sm" data-name="Node-RED" data-icon="nodered"></span>
+      </div>
+      <p class="stack-note rev">+ Hadoop · Hive · Kotlin · Groovy · Bash · R · Blueway · &amp; bien d'autres</p>
+    </div>
+  </section>
 
-      <section class="section">
-        <h2 class="section__title">Langues</h2>
-        <ul id="langues" class="list"></ul>
-      </section>
+  <!-- ======================= PRESENT (Pochet) ===================== -->
+  <section class="present on-dark" data-year="2024 · Pochet" data-screen-label="Présent — Pochet" style="background-color: rgb(17, 36, 51)">
+    <div class="wrap">
+      <p class="chapter-tag rev"><b>Maintenant</b> Novembre 2024 → aujourd'hui</p>
+      <h2 class="rev" data-d="1">Data Engineer<br /><span class="co">@ Groupe Pochet</span></h2>
+      <p class="present__sub rev" data-d="2">
+        <span>Clichy (92)</span><span>Industrie · Luxe &amp; flaconnage</span><span>DataPlatform from scratch</span>
+      </p>
 
-      <section class="section">
-        <h2 class="section__title">Réalisations</h2>
-        <ul id="realisations" class="list"></ul>
-      </section>
+      <p class="lead rev" data-d="2" style="margin-top:42px;max-width:24ch">
+        On m'a confié une page blanche : <em class="mark">construire la DataPlatform</em>
+        de l'entreprise.
+      </p>
 
-      <section class="section">
-        <h2 class="section__title">Hobbies</h2>
-        <ul id="hobbies" class="list"></ul>
-      </section>
-    </main>
-  </div>
+      <div class="present__body">
+        <div>
+          <p class="prose rev">
+            Je porte aujourd'hui l'ensemble du support de la plateforme, sa documentation et
+            sa gouvernance (RACI). J'ai conçu l'architecture des tables, piloté la montée en
+            compétences sur <em class="mark">Snowflake</em>, et orchestré les flux selon une
+            <em class="mark">architecture Médaillon</em>.
+          </p>
+          <p class="prose rev" style="margin-top:18px">
+            Et je pousse l'IA au plus près des métiers : veille sur les agents
+            <em class="mark">Cortex</em>, développement d'un chatbot, animation de clubs
+            d'acculturation IA &amp; Tableau.
+          </p>
 
-  <script>
-    // Helpers
-    const isBlank = (v) => v === undefined || v === null || String(v).trim() === "" || String(v).trim() === "_";
-    const cleanArray = (arr) => (Array.isArray(arr) ? arr.filter(x => !isBlank(x)) : []);
-    const asArray = (v) => Array.isArray(v) ? v : (isBlank(v) ? [] : String(v).split(",").map(s => s.trim()).filter(Boolean));
-
-    fetch("cv.json")
-      .then(res => res.json())
-      .then(cv => {
-        // Header
-        document.getElementById("nom").textContent = [cv.Prénom, cv.Nom].filter(Boolean).join(" ");
-        document.getElementById("note").textContent = cv.Note || "";
-        document.getElementById("age").textContent = cv.Age || "";
-        document.getElementById("taille").textContent = cv.Taille || "";
-        document.getElementById("sexe").textContent = cv.Sexe === "M" ? "Homme" : (cv.Sexe || "");
-
-        // Expériences
-        const expRoot = document.getElementById("experiences");
-        (cv["Expériences Professionnelles"] || []).forEach(e => {
-          const missions = cleanArray(e.Missions)
-            .map(m => `<li>${m}</li>`).join("");
-          const techs = asArray(e["Principales Technologies"])
-            .map(t => `<span class="chip">${t}</span>`).join("");
-          const plusValue = asArray(e["Plus Value"])
-            .map(p => `<span class="chip chip--soft">${p}</span>`).join("");
-          const client = !isBlank(e.Client) ? ` — Client : <strong>${e.Client}</strong>` : "";
-
-          expRoot.insertAdjacentHTML("beforeend", `
-            <article class="card">
-              <div class="card__head">
-                <h3 class="card__title">${e.Nom || ""} — ${e.Entreprise || ""}${client}</h3>
-                <div class="card__meta">
-                  <span>${e.Période || ""}</span> • <span>${e.Localisation || ""}</span>
-                </div>
+          <div class="medallion rev" style="margin-top:38px">
+            <p class="medallion__title">Pipeline Médaillon</p>
+            <div class="flow">
+              <div class="node node--b">
+                <div class="node__k">Couche 01</div>
+                <div class="node__t">Bronze</div>
+                <div class="node__d">Données brutes ingérées telles quelles</div>
               </div>
-              ${!isBlank(e.Description) ? `<p class="card__desc">${e.Description}</p>` : ""}
-              ${missions ? `<ul class="card__list">${missions}</ul>` : ""}
-              ${(techs || plusValue) ? `<div class="stack">${techs} ${plusValue}</div>` : ""}
-            </article>
-          `);
-        });
-
-        // Formations
-        const formRoot = document.getElementById("formations");
-        (cv.Formations || []).forEach(f => {
-          formRoot.insertAdjacentHTML("beforeend", `
-            <article class="row">
-              <div class="row__main">
-                <h3 class="row__title">${f.Nom || ""}</h3>
-                <div class="row__meta">${f.Ecole || ""}</div>
-                <div class="row__meta">${[f.Période, f.Localisation].filter(x => !isBlank(x)).join(" • ")}</div>
-                ${!isBlank(f.Description) ? `<p class="row__desc">${f.Description}</p>` : ""}
+              <div class="flow__arrow">→</div>
+              <div class="node node--s">
+                <div class="node__k">Couche 02</div>
+                <div class="node__t">Silver</div>
+                <div class="node__d">Nettoyées, conformées, fiables</div>
               </div>
-              <div class="row__aside">${f["Niveau Étude"] || ""}</div>
-            </article>
-          `);
-        });
-
-        // Compétences (groupées par catégories)
-        const compRoot = document.getElementById("competences");
-        (cv.Compétences || []).forEach(cat => {
-          const items = cleanArray(cat.Liste);
-          if (items.length) {
-            compRoot.insertAdjacentHTML("beforeend", `
-              <div class="skill-group">
-                <div class="skill-group__title">${cat.Nom}</div>
-                <div class="skill-group__chips">
-                  ${items.map(it => `<span class="chip">${it}</span>`).join("")}
-                </div>
+              <div class="flow__arrow">→</div>
+              <div class="node node--g">
+                <div class="node__k">Couche 03</div>
+                <div class="node__t">Gold</div>
+                <div class="node__d">Prêtes pour la décision métier</div>
               </div>
-            `);
-          }
-        });
+            </div>
+          </div>
+        </div>
 
-        // Expériences académiques
-        const acadRoot = document.getElementById("academiques");
-        (cv["Expériences Académiques"] || []).forEach(block => {
-          const items = cleanArray(block.Réalisation).map(r => `
-            <li><strong>${r.Intitulé || ""}</strong> — ${r.Description || ""}</li>
-          `).join("");
-          if (items) {
-            acadRoot.insertAdjacentHTML("beforeend", `
-              <article class="card">
-                <h3 class="card__title">${block.Programme || ""}</h3>
-                <ul class="card__list">${items}</ul>
-              </article>
-            `);
-          }
-        });
+        <div class="highlights">
+          <div class="hl rev">
+            <span class="hl__n">01</span>
+            <div>
+              <h3 class="hl__t">Support &amp; gouvernance</h3>
+              <p class="hl__d">RACI appliqué, documentation des projets et process, mapping de l'architecture des tables.</p>
+            </div>
+          </div>
+          <div class="hl rev" data-d="1">
+            <span class="hl__n">02</span>
+            <div>
+              <h3 class="hl__t">IA &amp; agents Cortex</h3>
+              <p class="hl__d">Chatbot pour répondre aux besoins métiers, veille sur l'IA Snowflake, acculturation interne.</p>
+            </div>
+          </div>
+          <div class="hl rev" data-d="2">
+            <span class="hl__n">03</span>
+            <div>
+              <h3 class="hl__t">Du besoin au dashboard</h3>
+              <p class="hl__d">Recueil &amp; chiffrage des besoins, pipelines de traitement, restitution sur Tableau Software.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        // Langues
-        const langRoot = document.getElementById("langues");
-        cleanArray(cv.Langues).forEach(l => {
-          langRoot.insertAdjacentHTML("beforeend", `
-            <li><strong>${l.Nom || ""}</strong> — ${l.Niveau || ""}</li>
-          `);
-        });
+      <ul class="missions rev" id="pochet-missions"></ul>
 
-        // Réalisations
-        const realRoot = document.getElementById("realisations");
-        cleanArray(cv.Réalisations).forEach(r => {
-          if (!isBlank(r.Nom)) {
-            realRoot.insertAdjacentHTML("beforeend", `
-              <li><strong>${r.Nom}</strong> — ${r.Description || ""}</li>
-            `);
-          }
-        });
+      <div class="tech-row rev" id="pochet-tech"></div>
+    </div>
+  </section>
 
-        // Hobbies
-        const hobRoot = document.getElementById("hobbies");
-        cleanArray(cv.Hobbies).forEach(h => {
-          hobRoot.insertAdjacentHTML("beforeend", `
-            <li><strong>${h.Nom || ""}</strong> — ${h.Description || ""}</li>
-          `);
-        });
-      })
-      .catch(err => {
-        document.body.insertAdjacentHTML("beforeend",
-          `<p style="color:#b00020;text-align:center">Erreur de chargement du CV : ${err}</p>`);
-      });
+  <!-- ========================= TIMELINE ========================== -->
+  <section class="timeline-sec" data-screen-label="Parcours pro">
+    <div class="wrap">
+      <div id="timeline-entries"></div>
+    </div>
+  </section>
+
+  <!-- ========================= FORMATIONS ======================== -->
+  <section class="edu" data-year="Études" data-screen-label="Formations">
+    <div class="wrap">
+      <div class="edu__head rev">
+        <h2 class="display">Comment j'ai appris</h2>
+        <p class="eyebrow eyebrow--muted">BAC+6 → BAC</p>
+      </div>
+      <div class="edu__list" id="edu-list"></div>
+    </div>
+  </section>
+
+  <!-- ========================= COMPÉTENCES ======================= -->
+  <section class="skills-sec" data-screen-label="Compétences">
+    <div class="wrap">
+      <p class="eyebrow rev">L'arsenal complet</p>
+      <h2 class="display rev" style="font-size:clamp(30px,4vw,48px);margin:0">Tout ce que j'ai entre les mains</h2>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- ====================== AWARDS / PROJETS ===================== -->
+  <section class="awards on-dark" data-screen-label="Réalisations" style="background-color: rgb(17, 36, 51)">
+    <div class="wrap">
+      <h2 class="rev">Quelques fiertés</h2>
+      <div class="award-grid" id="awards-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========================== LANGUES ========================== -->
+  <section class="lang-sec" data-screen-label="Langues">
+    <div class="wrap">
+      <p class="eyebrow rev">Langues</p>
+      <div class="lang-grid" id="lang-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========================== HOBBIES ========================== -->
+  <section class="life" data-year="Hors-data" data-screen-label="Hobbies">
+    <div class="wrap">
+      <div class="life__head rev">
+        <p class="eyebrow eyebrow--muted">En dehors des données</p>
+        <h2 class="display">Ce qui me garde curieux</h2>
+        <p>Le mouvement, l'image, le voyage — et un appareil photo qui ne me quitte pas.</p>
+      </div>
+      <div class="life-grid" id="life-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========================== FOOTER =========================== -->
+  <footer class="foot on-dark" data-screen-label="Contact" style="background-color: rgb(17, 36, 51)">
+    <div class="wrap">
+      <p class="eyebrow">Le fil continue</p>
+      <p class="foot__big">D'un premier <span class="co">signal</span><br />à la plateforme.</p>
+      <div class="foot__row">
+        <div class="foot__links">
+          <a class="btn btn--p" href="https://www.linkedin.com/in/harry-degbegni/" target="_blank" rel="noopener">
+            LinkedIn ↗
+          </a>
+          <a class="btn btn--g" href="mailto:harry.degbegni@outlook.com">Écrivez-moi</a>
+        </div>
+        <p class="foot__meta">Harry Degbegni · Data &amp; IA Engineer<br />Disponible pour de nouveaux défis data</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="tweaks-root"></div>
+
+  <!-- scripts -->
+  <script src="image-slot.js"></script>
+  <script src="cv.js"></script>
+  <script src="hero-shader.js"></script>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+
+  <script type="text/babel">
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "accent": "#2f5fa6",
+      "displayFont": "Instrument Serif",
+      "density": "standard",
+      "grain": "on",
+      "shader": "Aurora"
+    }/*EDITMODE-END*/;
+
+    const FONT_STACK = {
+      "Instrument Serif": '"Instrument Serif", Georgia, serif',
+      "Newsreader": '"Newsreader", Georgia, serif',
+      "Libre Caslon Display": '"Libre Caslon Display", Georgia, serif'
+    };
+
+    function CVTweaks() {
+      const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+      React.useEffect(() => {
+        document.documentElement.style.setProperty("--accent", t.accent);
+      }, [t.accent]);
+      React.useEffect(() => {
+        document.documentElement.style.setProperty("--display", FONT_STACK[t.displayFont] || FONT_STACK["Instrument Serif"]);
+      }, [t.displayFont]);
+      React.useEffect(() => {
+        document.body.setAttribute("data-density", t.density);
+      }, [t.density]);
+      React.useEffect(() => {
+        document.body.classList.toggle("grain-on", t.grain === "on");
+      }, [t.grain]);
+      React.useEffect(() => {
+        if (window.heroShader) window.heroShader.setMode(t.shader);
+        else document.body.setAttribute("data-shader", t.shader);
+      }, [t.shader]);
+      React.useEffect(() => {
+        if (window.__heroShaderPalette) window.__heroShaderPalette();
+      }, [t.accent]);
+
+      return (
+        <TweaksPanel>
+          <TweakSection label="Fond animé (héro)" />
+          <TweakSelect label="Wallpaper shader" value={t.shader}
+            options={["Aurora", "Plasma", "Voronoï", "Ondes", "Grille"]}
+            onChange={(v) => setTweak("shader", v)} />
+          <TweakSection label="Couleur" />
+          <TweakColor label="Accent" value={t.accent}
+            options={["#2f5fa6", "#1d3f73", "#4a86c5", "#3a5a96"]}
+            onChange={(v) => setTweak("accent", v)} />
+          <TweakSection label="Typographie" />
+          <TweakSelect label="Police titres" value={t.displayFont}
+            options={["Instrument Serif", "Newsreader", "Libre Caslon Display"]}
+            onChange={(v) => setTweak("displayFont", v)} />
+          <TweakSection label="Mise en page" />
+          <TweakRadio label="Densité" value={t.density}
+            options={["compact", "standard", "aéré"]}
+            onChange={(v) => setTweak("density", v)} />
+          <TweakRadio label="Grain" value={t.grain}
+            options={["on", "off"]}
+            onChange={(v) => setTweak("grain", v)} />
+        </TweaksPanel>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("tweaks-root")).render(<CVTweaks />);
   </script>
+
 </body>
 </html>
