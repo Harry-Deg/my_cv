@@ -185,14 +185,21 @@ em.mark{ font-style: italic; font-family: var(--display); color: var(--ink); }
 
 .hero__name{
   font-family: var(--display);
-  font-size: clamp(56px, 9.5vw, 132px);
+  font-size: clamp(48px, 7.5vw, 112px);
   line-height: .96; letter-spacing: -0.015em;
   margin: 0;
   color: var(--cream);
+  text-align: right;
+}
+.hero__name-col{
+  justify-self: end;
+  align-self: center;
+  text-align: right;
 }
 .hero__role{
   font-family: var(--display); font-style: italic;
-  font-size: clamp(26px, 3.6vw, 46px);
+  font-size: clamp(42px, 7vw, 100px);
+  line-height: .96; letter-spacing: -0.02em;
   color: var(--accent);
   margin: 14px 0 0;
 }
@@ -222,9 +229,11 @@ em.mark{ font-style: italic; font-family: var(--display); color: var(--ink); }
 @keyframes slide{ 0%{transform:translateX(-120%);} 100%{transform:translateX(320%);} }
 
 @media (max-width: 860px){
-  .hero__grid{ grid-template-columns: 1fr; gap: 40px; }
+  .hero__grid{ grid-template-columns: 1fr; gap: 24px; }
   .hero__portrait{ justify-self: start; order:-1; max-width: 240px; }
   .portrait-cap{ text-align:left; }
+  .hero__name-col{ justify-self: start; text-align: left; }
+  .hero__name{ text-align: left; }
 }
 
 /* =========================================================
