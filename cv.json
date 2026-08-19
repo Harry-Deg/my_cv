@@ -25,7 +25,7 @@
         },
         {
             "Nom":"Cours Préparatoire Grande École",
-            "Ecole":"Cycle préparatoie père Aupiais",
+            "Ecole":"Cycle préparatoire Père Aupiais",
             "Période":"Septembre 2016 - Août 2018",
             "Localisation":"Cotonou, Bénin",
             "Niveau Étude":"BAC +2",
@@ -46,7 +46,7 @@
             "Entreprise":"Groupe POCHET",
             "Période":"Novembre 2024 - Aujourd'hui",
             "Localisation":"Clichy",
-            "Description":"Mise en place de la DataPlatform dans l'entreprise pour répondres aux différents besoins métiers qui émergent",
+            "Description":"Mise en place de la DataPlatform dans l'entreprise pour répondre aux différents besoins métiers qui émergent",
             "Missions":[
                 "Prise en charge de l'ensemble du support de la DataPlatform",
                 "Mise en place et application du RACI (Responsible, Accountable, Consulted, Informed)",
@@ -54,13 +54,13 @@
                 "Etablissement du mapping de l'architecture des tables",
                 "Pilotage de la montée en compétences sur Snowflake",
                 "Mise en place du pipeline de traitement des données",
-                "Orchestrastion Flux Médaillon (Bronze - Silver - Gold)",
+                "Orchestration Flux Médaillon (Bronze - Silver - Gold)",
                 "Veille technologique de l'IA Snowflake avec les agents Cortex",
                 "Développement de Chatbot pour répondre aux attentes métiers",
                 "Recueil formalisation et interprétation fonctionnelle des besoins métier",
                 "Planning et chiffrage des projets data",
                 "Animation des clubs d'acculturation IA et Tableau Software",
-                "Réalisation de dashboard por la restitutions des données",
+                "Réalisation de dashboard pour la restitution des données",
                 "Structuration des processus de déploiement",
                 "-"
             ],
@@ -91,7 +91,7 @@
             "Entreprise":"Lectra",
             "Période":"Octobre 2020 - Mars 2023",
             "Localisation":"Bordeaux, Cestas",
-            "Description":"Chargé de la qualité et de l'accessiblilité des données émisses par les machines Lectra pour les différentes équipes et services de l'entreprise",
+            "Description":"Chargé de la qualité et de l'accessibilité des données émises par les machines Lectra pour les différentes équipes et services de l'entreprise",
             "Missions":[
                 "Etude de POC pour l'adoption de nouveaux outils pour l'amélioration de l'architecture",
                 "Déploiement d'outil d'analyse de la qualité des données (Great Expectation)",
@@ -114,11 +114,11 @@
             "Entreprise":"My Universal Coaching Company",
             "Période":"Juin 2020 - Août 2020",
             "Localisation":"Allela, Espagne (Télétravail)",
-            "Description":"Mise en place d'un system d'alerte pour une plateforme de Trading pour la prise de décision",
+            "Description":"Mise en place d'un système d'alerte pour une plateforme de Trading pour la prise de décision",
             "Missions":[
                 "Formation à la Finance pour le Trading",
                 "Mise en place d'alerte se basant sur différente technique d'anticipation de l'évolution des courbes",
-                "Réalisation de tests d’intégration avant la mise en Prod des Scripts",
+                "Réalisation de tests d'intégration avant la mise en Prod des Scripts",
                 "Intégration des alertes à la plateforme",
                 "-"
             ],
@@ -140,16 +140,16 @@
             "Plus Value":"_"
         },
         {
-            "Nom":"Agent de Maintenace",
+            "Nom":"Agent de Maintenance",
             "Entreprise":"ASECNA Agence pour la Sécurité de la Navigation Aérienne en Afrique et à Madagascar",
             "Période":"Juin 2017",
             "Localisation":"Cotonou, Bénin",
             "Description":"Unité CNS (Communication, Navigation et Surveillance)",
             "Missions":[
                 "Travail Manuel",
-                "Réinstallé l'antenne HF (haute fréquence",
-                "Cartes électroniques vérifiées des équipements d'aide à la navigation aérienne",
-                "Piste d'atterrissage inspectée quotidiennement"
+                "Réinstallation de l'antenne HF (Haute Fréquence)",
+                "Vérification des cartes électroniques des équipements d'aide à la navigation aérienne",
+                "Inspection quotidienne de la piste d'atterrissage"
             ],
             "Principales Technologies":"_",
             "Plus Value":"_"
@@ -166,7 +166,7 @@
         },
         {
             "Nom":"Outils",
-            "Liste": ["Jsonnet", "Soda", "Great Expectation", "Postman", "Karate", "Kapoeira, Gherkins Syntax"]
+            "Liste": ["Jsonnet", "Soda", "Great Expectation", "Postman", "Karate", "Kapoeira", "Gherkins Syntax"]
         },
         {
             "Nom":"Techno Informatique",
@@ -174,7 +174,7 @@
         },
         {
             "Nom":"Base de Données",
-            "Liste":["Snowflake", "Azure Datalake", "AWS S3 ","SQL Server", "PostgreSQL", "MongoDB", "Oracle"]
+            "Liste":["Snowflake", "Azure Datalake", "AWS S3", "SQL Server", "PostgreSQL", "MongoDB", "Oracle"]
         },
         {
             "Nom":"Data Vizualisation",
@@ -191,7 +191,7 @@
             "Réalisation":[
                 {
                     "Intitulé":"Data Workshop Napolitain",
-                    "Description":"Prédiction des prix de Résidence AirBnB en R en utilisant la Régression Linéraire Multivariable après avoir effectuer un travail de nettoyage du dataset proposé (enlever les outliers, remplacer les cases vides, uniformiser le format des colonnes)"
+                    "Description":"Prédiction des prix de Résidence AirBnB en R en utilisant la Régression Linéaire Multivariable après avoir effectué un travail de nettoyage du dataset proposé (enlever les outliers, remplacer les cases vides, uniformiser le format des colonnes)"
                 },
                 {
                     "Intitulé":"Dashboard Streamlit",
@@ -203,11 +203,11 @@
                 },
                 {
                     "Intitulé":"Data Challenge (RSE Responsabilité Sociétale Environnementale)",
-                    "Description":"Réalisation d'un Dashboard Simple facile à comprendre présentant l'ètat actuel de l'impact environnemental des entreprises grâce à des données RSE après avoir pondérer et scorer ces différents impacts et leurs Engagements pour le RSE"
+                    "Description":"Réalisation d'un Dashboard Simple facile à comprendre présentant l'état actuel de l'impact environnemental des entreprises grâce à des données RSE après avoir pondéré et scoré ces différents impacts et leurs Engagements pour le RSE"
                 },
                 {
                     "Intitulé":"Supervised and Unsupervised Learning",
-                    "Description":"Comparaison de différents Modèles de machnes Learning afin d'identifier le plus adapter à un dataset donnée en comparant les Scores d'évaluations"
+                    "Description":"Comparaison de différents Modèles de Machine Learning afin d'identifier le plus adapté à un dataset donné en comparant les Scores d'évaluations"
                 },
                 {
                     "Intitulé":"Digital Marketing",
@@ -220,7 +220,7 @@
             "Réalisation":[
                 {
                     "Intitulé":"Projet Ingénieur (PING)",
-                    "Description":"_Projet réalisé pour la BNP"
+                    "Description":"Projet réalisé pour la BNP"
                 },
                 {
                     "Intitulé":"Prédiction Accident Routier",
@@ -257,7 +257,7 @@
     "Langues":[
         {
             "Nom":"Francais",
-            "Niveau":"Natale"
+            "Niveau":"Maternelle"
         },
         {
             "Nom":"Anglais",
@@ -279,9 +279,8 @@
         },
         {
             "Nom":"1er Prix KAMA Project",
-            "Description":"Projet Hors programme ESIGELEC Initiation à la création d’entreprise ( Proposition de Projet portant sur le développement de l'Afrique ) Meilleur projet écologique et Innovant"
-        },
-        {}
+            "Description":"Projet Hors programme ESIGELEC Initiation à la création d'entreprise ( Proposition de Projet portant sur le développement de l'Afrique ) Meilleur projet écologique et Innovant"
+        }
     ],
     "Hobbies":[
         {
@@ -294,7 +293,7 @@
         },
         {
             "Nom":"Danse",
-            "Description":"Pratiqué pendant 4 ans, responsable pôle Événementiel Esig'Danse, Club de Danse de l'ESIGELEC, chargé de l'identité visuel, réalisation des posters "
+            "Description":"Pratiqué pendant 4 ans, responsable pôle Événementiel Esig'Danse, Club de Danse de l'ESIGELEC, chargé de l'identité visuelle, réalisation des posters"
         },
         {
             "Nom":"Course à pied",

@@ -8,6 +8,19 @@
      Chargement dynamique depuis cv.json
      ========================================================= */
 
+  var DI = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/";
+
+  /* Icônes absentes de Simple Icons → URL directe (Devicon ou Wikimedia) */
+  var ICON_URLS = {
+    "oracle":      DI + "oracle/oracle-original.svg",
+    "azuredevops": DI + "azuredevops/azuredevops-original.svg",
+    "amazons3":    DI + "amazonwebservices/amazonwebservices-original-wordmark.svg",
+    "powerbi":     "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg",
+    "tableau":     "logos/tableau.png",
+    "vertech":     "https://vertech.eu/wp-content/smush-webp/2019/06/logo-favicon-64px.png.webp",
+    "blueway":     "https://www.blueway.fr/wp-content/themes/blueway/favicon_general.svg"
+  };
+
   var ICON_MAP = {
     "snowflake": "snowflake",
     "python": "python",
@@ -39,10 +52,13 @@
     "azure devops": "azuredevops",
     "node-red": "nodered",
     "kotlin": "kotlin",
-    "groovy": "groovy",
+    "groovy": "apachegroovy",
     "bash": "gnubash",
     "power bi": "powerbi",
-    "powerbi": "powerbi"
+    "powerbi": "powerbi",
+    "blueway": "blueway",
+    "mes vertech": "vertech",
+    "vertech": "vertech"
   };
 
   function esc(s) {
@@ -271,7 +287,7 @@
         img.alt = name;
         img.loading = "lazy";
         img.decoding = "async";
-        img.src = "https://cdn.simpleicons.org/" + icon;
+        img.src = ICON_URLS[icon] || ("https://cdn.simpleicons.org/" + icon);
         img.addEventListener("error", function () {
           el.innerHTML = "";
           renderText(el, name);
