@@ -62,6 +62,7 @@
                 "Animation des clubs d'acculturation IA et Tableau Software",
                 "Réalisation de dashboard pour la restitution des données",
                 "Structuration des processus de déploiement",
+                "Intégration de Gitlab dans les process DSI (versioning, CI/CD, bonnes pratiques)",
                 "-"
             ],
             "Principales Technologies":["Snowflake", "Blueway", "AWS S3", "Oracle", "MySQL", "SAP", "Gitlab", "M3", "Copilot Studio", "Streamlit", "Tableau Software", "MES Vertech"],

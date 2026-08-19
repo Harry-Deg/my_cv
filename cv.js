@@ -18,7 +18,11 @@
     "powerbi":     "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg",
     "tableau":     "logos/tableau.png",
     "vertech":     "https://vertech.eu/wp-content/smush-webp/2019/06/logo-favicon-64px.png.webp",
-    "blueway":     "https://www.blueway.fr/wp-content/themes/blueway/favicon_general.svg"
+    "blueway":     "https://www.blueway.fr/wp-content/themes/blueway/favicon_general.svg",
+    "inform3":     "https://www.infor.com/favicon.png",
+    "microsoftcopilot": "https://copilot.microsoft.com/static/cmc/favicon.svg",
+    "instana":     "https://avatars.githubusercontent.com/u/5128994?v=4",
+    "sbt":         "https://www.scala-sbt.org/assets/favicon-96x96.png"
   };
 
   var ICON_MAP = {
@@ -58,7 +62,16 @@
     "powerbi": "powerbi",
     "blueway": "blueway",
     "mes vertech": "vertech",
-    "vertech": "vertech"
+    "vertech": "vertech",
+    "m3": "inform3",
+    "copilot studio": "microsoftcopilot",
+    "dbeaver": "dbeaver",
+    "instana": "instana",
+    "splunk": "splunk",
+    "pycharm": "pycharm",
+    "anaconda": "anaconda",
+    "cucumber": "cucumber",
+    "sbt": "sbt"
   };
 
   function esc(s) {
@@ -105,6 +118,10 @@
     return m ? m[0] : "";
   }
 
+  var RAIL_ABBR = {
+    "My Universal Coaching Company": "MUCC"
+  };
+
   function renderExpArticle(exp) {
     var year = extractStartYear(exp["Période"]);
     var client = exp["Client"] ? " · client " + esc(exp["Client"]) : "";
@@ -113,7 +130,8 @@
       : "";
     var missions = renderMissions(exp["Missions"]);
     var tech = renderTechs(exp["Principales Technologies"]);
-    var dataYear = esc(year + " · " + exp["Entreprise"]);
+    var railEntreprise = RAIL_ABBR[exp["Entreprise"]] || exp["Entreprise"];
+    var dataYear = esc(year + " · " + railEntreprise);
 
     return '<article class="chapter" data-year="' + dataYear + '">' +
       '<div class="chapter__year rev"><b>' + esc(year) + '</b></div>' +
