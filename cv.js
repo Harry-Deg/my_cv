@@ -22,7 +22,11 @@
     "inform3":     "https://www.infor.com/favicon.png",
     "microsoftcopilot": "https://copilot.microsoft.com/static/cmc/favicon.svg",
     "instana":     "https://avatars.githubusercontent.com/u/5128994?v=4",
-    "sbt":         "https://www.scala-sbt.org/assets/favicon-96x96.png"
+    "sbt":         "https://www.scala-sbt.org/assets/favicon-96x96.png",
+    "ammonite":    "https://ammonite.io/favicon.png",
+    "karate":      "https://avatars.githubusercontent.com/u/91312095?v=4",
+    "kendoui":     "https://avatars.githubusercontent.com/u/568561?v=4",
+    "kafkaui":     "https://avatars.githubusercontent.com/u/98461227?v=4"
   };
 
   var ICON_MAP = {
@@ -71,7 +75,12 @@
     "pycharm": "pycharm",
     "anaconda": "anaconda",
     "cucumber": "cucumber",
-    "sbt": "sbt"
+    "sbt": "sbt",
+    "maven": "apachemaven",
+    "ammonite": "ammonite",
+    "karate": "karate",
+    "kendo": "kendoui",
+    "kafkaui": "kafkaui"
   };
 
   function esc(s) {
@@ -119,7 +128,8 @@
   }
 
   var RAIL_ABBR = {
-    "My Universal Coaching Company": "MUCC"
+    "My Universal Coaching Company": "MUCC",
+    "ASECNA Agence pour la Sécurité de la Navigation Aérienne en Afrique et à Madagascar": "ASECNA"
   };
 
   function renderExpArticle(exp) {
@@ -316,7 +326,21 @@
         renderText(el, name);
       }
       el.appendChild(tip);
+      el.addEventListener("mouseenter", function () { positionTip(el); });
     });
+  }
+
+  /* Empêche l'info-bulle de déborder hors de l'écran (gauche/droite) */
+  function positionTip(el) {
+    var tip = el.querySelector(".tech__tip");
+    if (!tip) return;
+    var margin = 10;
+    tip.style.setProperty("--tip-shift", "0px");
+    var r = tip.getBoundingClientRect();
+    var shift = 0;
+    if (r.left < margin) shift = margin - r.left;
+    else if (r.right > window.innerWidth - margin) shift = (window.innerWidth - margin) - r.right;
+    tip.style.setProperty("--tip-shift", shift.toFixed(0) + "px");
   }
 
   function renderText(el, name) {
